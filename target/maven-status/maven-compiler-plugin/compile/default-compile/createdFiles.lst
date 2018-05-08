@@ -1,0 +1,9 @@
+com\analytics\rest\AnalyticResource.class
+com\analytics\dto\StatsResponseDTO.class
+com\analytics\core\AnalyticsService.class
+com\analytics\core\EventDAO.class
+com\analytics\dto\DataDTO.class
+com\analytics\rest\APIApplicationResourceConfig.class
+com\analytics\dto\AnalyticDTO.class
+com\analytics\dto\Event.class
+com\analytics\rest\StatsResource.class

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+    <Array id="plusConfig" type="java.lang.String">
+        <Item>org.eclipse.jetty.webapp.WebInfConfiguration</Item>
+        <Item>org.eclipse.jetty.plus.webapp.EnvConfiguration</Item>
+        <Item>org.eclipse.jetty.plus.webapp.Configuration</Item>
+        <Item>org.eclipse.jetty.webapp.JettyWebXmlConfiguration</Item>
+        <Item>org.eclipse.jetty.webapp.TagLibConfiguration</Item>
+    </Array>
+    <New id="analytics.db.url" class="org.eclipse.jetty.plus.jndi.EnvEntry">
+		<Arg>analytics.db.url</Arg>
+		<Arg type="java.lang.String">localhost:3306/analytics</Arg>
+	</New>
+	<New id="analytics.db.username" class="org.eclipse.jetty.plus.jndi.EnvEntry">
+		<Arg>analytics.db.username</Arg>
+		<Arg type="java.lang.String">root</Arg>
+	</New>
+	<New id="analytics.db.password" class="org.eclipse.jetty.plus.jndi.EnvEntry">
+		<Arg>analytics.db.password</Arg>
+		<Arg type="java.lang.String">root</Arg>
+	</New>
+</Configure>
